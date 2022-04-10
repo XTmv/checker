@@ -1,3 +1,5 @@
+# Created with Python AI
+
 print("Hello World!")
 import requests
 import random
@@ -8,11 +10,11 @@ y = Fore.YELLOW
 c = Fore.CYAN
 print(c + requests.get('http://artii.herokuapp.com/make?text= O M A R ').text)
 
-print('================================================')
+print('made by f7lk Tamem')
 
 
 rt = requests.session()
-litters = 'qwertyuiopasdfghjklzxcvbnm1234567890'
+litters =abcdefghijklmnopqrstuvwxyz1234567890'
 u = ''
 
 id = input("[+] Enter Id : ")
@@ -20,7 +22,7 @@ id = input("[+] Enter Id : ")
 token = input("[+] Enter Bot Token : ")
 print('')
 hea = {
-        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,/;q=0.8,application/signed-exchange;v=b3;q=0.9',
+        'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
         'accept-encoding': 'gzip, deflate, br',
         'accept-language': 'en-US,en;q=0.9,ar;q=0.8',
         'cache-control': 'max-age=0',
@@ -41,7 +43,7 @@ while True:
  reqsnd = rt.get(tiko, headers=hea).status_code
  if reqsnd == 404:
          print(g + f' [+] {usernames} متاح او مبند ')
-         bot = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text=متاح او مبند : {usernames}\n𝘽𝙔 : @aaqx7"
+         bot = f"https://api.telegram.org/bot{token}/sendMessage?chat_id={id}&text=متاح او مبند : {usernames}\n𝘽𝙔 : @8hdb"
          rt.get(bot)
  else:
    print(r + f' [+] {usernames} غير متاح ')
